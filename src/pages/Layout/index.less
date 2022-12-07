@@ -1,0 +1,53 @@
+.layout {
+	height: 100vh;
+	// min-height: 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: hidden;
+
+	.head {
+		flex: 0 0 42px;
+		background: linear-gradient(270deg, #465062, #2a2f38);
+	}
+
+	.body {
+		height: calc(100% - 42px);
+		flex: auto;
+		background-color: #f2f2f2;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		.body-tabs {
+			flex: 0;
+			padding: 0px 0px 5px 0px;
+		}
+		.body-content {
+			flex: 1;
+			position: relative;
+			height: 100%;
+			overflow: hidden;
+			background-size: cover;
+			background-position: 0 0;
+		}
+	}
+
+	.ant-spin-nested-loading {
+		height: 100% !important;
+	}
+	.ant-spin-container {
+		height: 100% !important;
+	}
+}
+
+.menudraw {
+	height: calc(100% - 44px) !important;
+	top: 44px !important;
+}
+// .ant-spin-nested-loading {
+//   height: 100% !important;
+// }
+// .ant-spin-container {
+//   height: 100% !important;
+// }

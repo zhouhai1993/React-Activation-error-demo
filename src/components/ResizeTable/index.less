@@ -1,0 +1,46 @@
+//index.less
+.tableWrap {
+    height: 100%;
+    position: relative;
+    flex: 1;
+ 
+    //使用absolute原因在于，窗口resize时，可以即时获取窗口高度
+    //仅用flex无法做到
+    .table {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        background-color: white;
+
+        :global {
+            //翻页部分
+            .ant-table-pagination.ant-pagination {
+                margin: 16px 0 0;
+            }
+ 
+            //表头不换行
+            .ant-table-thead > tr > th {
+                white-space: nowrap;
+            }
+        }
+
+        .ant-pro-card-body {
+            padding-inline: 10px;
+            padding-block: 0px;
+        }
+
+        .table-agination {
+            display: flex;
+            justify-content: flex-end;
+            background-color: white;
+            padding: 8px 8px 8px 8px;
+            border-top: 1px solid rgba(0, 0, 0, 0.06);
+        }
+    }
+}

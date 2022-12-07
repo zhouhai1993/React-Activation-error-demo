@@ -1,0 +1,40 @@
+.menuitems {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-right: 1px solid #f0f0f0;
+    margin-left: 8px;
+    display: flex;
+    flex-direction: row;
+
+    .menuitems-content {
+        width: 180px;
+        height: 100%;
+        background-color: white;
+        border-right: 2px solid #f0f0f0;
+    
+        .menuitems-item {
+            width: 100%;
+            height: auto;
+            color: #333;
+            padding: 9px 11px 9px 8px;
+            cursor: pointer;
+            margin-bottom: 6px
+        }
+    
+        .menuitems-item-active {
+            width: 100%;
+            height: auto;
+            color: @primary-color;
+            border-left: 3px solid @primary-color;
+            background: #f6f6f6;
+            border-radius: 4px;
+            padding: 9px 11px 9px 8px;
+            cursor: pointer;
+            margin-bottom: 6px
+        }
+    }
+    
+}
+
+

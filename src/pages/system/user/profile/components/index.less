@@ -1,0 +1,49 @@
+.rotate-and-save-button-container {
+    padding: 20px 0 0 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.preview-container {
+    width: 240px;
+    display: flex;
+    align-items: flex-end;
+
+    .cropper-preview {
+        width: 180px;
+        height: 180px;
+        overflow: hidden;
+        border: 1px solid #c2bebe;
+    }
+}
+
+.slider-container {
+    height: 180px;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .slider {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 10px;
+
+        .rotate-button {
+            font-size: 16px;
+            line-height: 19px;
+            width: 30px;
+            text-align: center;
+        }
+
+        .rotate-slider {
+            flex: 1;
+            margin: 0px 16px 0px 16px !important;
+        }
+    }
+}
